@@ -46,7 +46,14 @@
 }
 
 .nav-item {
-  height: 80px;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 0rem;
+  background-color: #fff;
+  color: white;
 }
 
 .nav-links {
@@ -64,7 +71,7 @@
 }
 
 .fa-bars {
-  color: #fff;
+  color: black;
 }
 
 .nav-links-mobile {
@@ -93,7 +100,7 @@
   }
 
   .nav-menu.active {
-    background: #242222;
+    background: #fff;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
