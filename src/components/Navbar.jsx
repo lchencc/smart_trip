@@ -7,6 +7,8 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
+  console.log(button);
+
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
