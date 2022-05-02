@@ -4,6 +4,7 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import React from 'react';
 
 import Home from './components/pages/Home.jsx';
+import Plan from './components/pages/Plan.jsx';
 import Contact from './components/pages/Contact.jsx';
 
 import './App.css';
@@ -16,6 +17,7 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/plan" component={Plan} />
             <Route exact path="/contact" component={Contact} />
           </Switch>
         </Router>
