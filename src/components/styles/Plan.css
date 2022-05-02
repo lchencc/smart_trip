@@ -5,15 +5,15 @@
 }
 
 .side {
-  width: 30%;  
-  height: 375px;
+  width: 50%;  
+  height: 100vh;
   float: right;
   padding-right: 20px;
 }
 
 .box_main {
-  width: 70%;
-  height: 900px;
+  width: 50%;
+  height: 100vh;
   background: white;
   display: inline-block;
   overflow: scroll;
@@ -21,19 +21,10 @@
 
 .box_info {
   width: 100%;
-  padding-top: 50px;
-  height: 400px;
+  height: 35vh;
   border-radius: 10px;
   display: inline-block;
   overflow: scroll;
-}
-
-.box_recommended {
-  width: 100%;
-  height: 300px;
-  background: white;
-  display: inline-block;
-  overflow: auto;
 }
 
 h2 {
@@ -42,13 +33,14 @@ h2 {
 }
 
 .add_button {
+  height: 5vh;
   text-align: center;
   vertical-align: bottom;
 }
 
 .box_selection {
   width: 100%;
-  height: 300px;
+  height: 35vh;
   background: white;
   display: inline-block;
   overflow: auto;
@@ -61,14 +53,14 @@ h2 {
 .box3 {
  width: 100%;
  background: white;
- height: 100px;
+ height: 10vh;
  padding-top: 20px;
  align-items: center;
  text-align: center;
 }
 
 .cards {
-  padding: 4rem;
+  padding: 1rem;
   background: #fff;
 }
 
@@ -78,7 +70,6 @@ h1 {
 
 .cards__container {
   display: flex;
-  flex-flow: column;
   align-items: center;
   max-width: 1120px;
   width: 90%;
@@ -190,7 +181,7 @@ h1 {
 
 .bolded { 
   color: black;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .bolded2 { 

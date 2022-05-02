@@ -107,12 +107,13 @@ class Plan extends React.Component {
     } else {
       const attractions = this.state.attractions.attractions
       return(
+        
         <div className="wrapper">
+        <h2 style={{color:"white", background:"steelblue"}}>Please Select Attrations</h2>
         <div className="box_main">
           <div className="cards">
-            <h1>Please Select the Attrations</h1>
             <div className="cards__container">
-              <div className="cards__wrapper"> 
+              <div className="cazrds__wrapper"> 
                 <ul className="cards__items"> {
                   attractions.filter((item, index) => (index <= 2 && index >= 0)).map((filteredItem) => 
                   <Attraction
@@ -380,12 +381,12 @@ class Plan extends React.Component {
         <div className="box_info">
           <h2>Information</h2>
             <br></br>
-              <li><span className="bolded">Name</span> : {details["name"]}</li>
-              <li><span className="bolded">Address</span> : {details["address"]}</li>
-              <li><span className="bolded">Category</span> : {details["category"]}</li>
-              <li><span className="bolded">Number of Reviews</span> : {details["num_reviews"]}</li>
-              <li><span className="bolded">Rating</span> : {details["rating"]}</li>
-              <li><span className="bolded">Description</span> : <span className="bolded2">{details["description"]}</span></li>
+              <li><span className="bolded">Name: {details["name"]}</span></li>
+              <li><span className="bolded">Address: {details["address"]}</span></li>
+              <li><span className="bolded">Category: {details["category"]}</span></li>
+              <li><span className="bolded">Number of Reviews: {details["num_reviews"]}</span></li>
+              <li><span className="bolded">Rating: {details["rating"]}</span></li>
+              <li><span className="bolded">Description: {details["description"]}</span></li>
             <br></br>
         </div>
         <div className="add_button">
@@ -396,15 +397,14 @@ class Plan extends React.Component {
                 buttonSize="btn--medium"
                 tolink="/plan"
               >
-                Add {details["name"]} to your list
-        </Button></div>
-        <br></br>
-        <br></br>
-        <h2>Selected Attractions</h2>
+                <h5>Add It!</h5>
+            </Button>
+        </div>
         <div className="box_selection">
+          <br></br>
+          <h2>Selected</h2>
           <div className="cards__container">
               <div className="cards__wrapper"> 
-                
                 <ul className="cards__items"> {
                   planned.map((att) => (
                     <Attraction 
@@ -428,7 +428,7 @@ class Plan extends React.Component {
             buttonSize="btn--large"
             tolink="/map"
           >
-            Next: Select Hotels
+           <h6>Next: Select Hotels</h6>
           </Button>
         </div>
         </div>
