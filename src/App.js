@@ -7,6 +7,7 @@ import Home from './components/pages/Home.jsx';
 import Plan from './components/pages/Plan.jsx';
 import Map from './components/pages/Map.jsx';
 import Contact from './components/pages/Contact.jsx';
+import Final from './components/pages/Final.jsx';
 
 import './App.css';
 
@@ -20,6 +21,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/plan" component={Plan} />
             <Route exact path="/map" component={Map} />
+            <Route exact path="/final" component={Final} />
             <Route exact path="/contact" component={Contact} />
           </Switch>
         </Router>

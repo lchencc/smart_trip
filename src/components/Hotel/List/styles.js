@@ -8,15 +8,15 @@ export default makeStyles((theme) => ({
     marginTop: theme.spacing(2),
   },
   loading: {
-    height: '600px', display: 'flex', justifyContent: 'center', alignItems: 'center',
+    height: '60vh', display: 'flex', justifyContent: 'center', alignItems: 'center',
   },
   container: {
-    padding: '25px',
+    padding: '5px',
   },
   marginBottom: {
     marginBottom: '30px',
   },
   list: {
-    height: '600px', overflow: 'auto',
+    height: '55vh', overflow: 'auto',
   },
 }));

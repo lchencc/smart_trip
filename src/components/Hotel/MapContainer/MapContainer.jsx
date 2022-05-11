@@ -41,7 +41,6 @@ const MapContainer = ({places, setChildClicked }) => {
 
     return (
     <div className={classes.mapContainer}>
-        <Typography variant="h4" style={{ marginBottom: 16 }}>Please Select Your Hotel/Airbnb on the Map</Typography>
         <GoogleMapReact
             bootstrapURLKeys={{ key: "AIzaSyDyVt3WbjR3-5EmpZO8pOJQAjCSldXWIb0" }}
             defaultCenter={center_loc}

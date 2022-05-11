@@ -80,7 +80,8 @@ const Map = () => {
 
   return (
     <div class="wrapper">
-      <div class="boxMain">
+      <h2 style={{color:"white", background:"steelblue"}}>Please Select Your Hotel on the Map</h2>
+      <div class="boxmainmap">
         <div className="cards">
           <MapContainer 
             setChildClicked={setChildClicked}
@@ -88,8 +89,8 @@ const Map = () => {
           />
         </div>
       </div>
-      <div class="side">
-        <div class="box1">
+      <div class="sidemap">
+        <div class="box1map">
           <List 
             places={filteredPlaces.length ? filteredPlaces : places}
             childClicked={childClicked}
@@ -103,7 +104,7 @@ const Map = () => {
         <div class="box2">
           {typeof childClicked === 'string' && <text>Selected Hotel: {places[parseInt(childClicked, 10)].name}</text>}
         </div>
-      <div class="box3">
+      <div class="box3map">
         <Button
           className="btns"
           buttonStyle="btn--outline"

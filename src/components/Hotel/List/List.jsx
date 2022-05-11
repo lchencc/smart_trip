@@ -23,7 +23,6 @@ const List = ({ places, childClicked, isLoading, rating, setRating, type, setTyp
     
     return (
         <div className={classes.container}>
-            <Typography variant="h4">Filter Conditions</Typography>
             {isLoading ? (
                 <div className={classes.loading}>
                 <CircularProgress size="5rem" />
