@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import MapWithADirectionsRenderer from "../Route/routeMap"
 import '../../App.css';
-import '../styles/Map.css';
+import '../styles/Final.css';
 
 const Final = () => {
   const [routeSet, setRouteSet] = useState([]);
@@ -44,17 +44,18 @@ const Final = () => {
   // this.setState({ routes: routes});
   return (
     <div class="wrapper">
-      <div class="boxMain">
+      <h2 style={{color:"white", background:"steelblue"}}>View Your Plan on the Map</h2>
+      <div class="boxmainfinal">
         <div className="cards">
           <MapWithADirectionsRenderer></MapWithADirectionsRenderer>
           {/* <Map dataFromParent={routeInfo}></Map> */}
         </div>
       </div>
-      <div class="side">
-        <div class="box1">
+      <div class="sidefinal">
+        <div class="box1final">
           <div>
-            <h1>Route Plan</h1>
-            <h2>{routeSet.length} routes:</h2>
+            <h2>{routeSet.length} Routes in Total</h2>
+            <br></br>
             {routeSet?.map((route, i)=>(
               <li id={i}>Distance: {route.distance} Duration: {route.duration}</li>
             ))}
@@ -66,9 +67,7 @@ const Final = () => {
                 return (
                   <tr key={i}>
                     <tr>
-                      <td>
-                        <b>Route {i}:  From {routePoints[i][0] && routePoints[i][0]} to {routePoints[i][1] && routePoints[i][1]}</b>
-                      </td>
+                      <h2>Route {i}</h2>
                     </tr>
                     {routeInfo.steps.map(function (step, j) {
                       return (
