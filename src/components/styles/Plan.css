@@ -1,6 +1,7 @@
 
 .wrapper {
   width: 100%;
+  height: 90vh;
   background: #fff;
 }
 
@@ -13,7 +14,7 @@
 
 .box_main {
   width: 50%;
-  height: 100vh;
+  height: 80vh;
   background: white;
   display: inline-block;
   overflow: scroll;
@@ -21,13 +22,18 @@
 
 .box_info {
   width: 100%;
-  height: 35vh;
+  height: 30vh;
   border-radius: 10px;
   display: inline-block;
   overflow: scroll;
 }
 
 h2 {
+  text-align: center;
+  vertical-align: top;
+}
+
+h4 {
   text-align: center;
   vertical-align: top;
 }
@@ -40,7 +46,7 @@ h2 {
 
 .box_selection {
   width: 100%;
-  height: 35vh;
+  height: 30vh;
   background: white;
   display: inline-block;
   overflow: auto;

@@ -378,9 +378,8 @@ class Plan extends React.Component {
           </div>
         </div>
         <div className="side">
+        <h4>Information</h4>
         <div className="box_info">
-          <h2>Information</h2>
-            <br></br>
               <li><span className="bolded">Name: {details["name"]}</span></li>
               <li><span className="bolded">Address: {details["address"]}</span></li>
               <li><span className="bolded">Category: {details["category"]}</span></li>
@@ -400,9 +399,8 @@ class Plan extends React.Component {
                 <h5>Add It!</h5>
             </Button>
         </div>
+        <h4>Selected</h4>
         <div className="box_selection">
-          <br></br>
-          <h2>Selected</h2>
           <div className="cards__container">
               <div className="cards__wrapper"> 
                 <ul className="cards__items"> {

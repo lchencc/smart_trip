@@ -5,14 +5,14 @@
   }
   
   .side {
-    width: 30%;  
+    width: 50%;  
     height: 375px;
     float: right;
     
   }
   
   .boxMain {
-    width: 70%;
+    width: 50%;
     height: 900px;
     background: white;
     display: inline-block;
