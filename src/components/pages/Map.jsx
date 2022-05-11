@@ -101,11 +101,11 @@ const Map = () => {
             setType={setType}
           />
         </div>
-        <div class="box2">
+        {/* <div class="box2">
           &nbsp;&nbsp;&nbsp;
           {typeof childClicked === 'string' && <text>Selected Hotel: {places[parseInt(childClicked, 10)].name}</text>}
           <br></br>
-        </div>
+        </div> */}
       <div class="box3map">
         <Button
           className="btns"

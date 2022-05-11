@@ -21,17 +21,24 @@ const MapWithADirectionsRenderer = compose(
   lifecycle({
     componentDidMount() {
       const DirectionsService = new google.maps.DirectionsService();
-      const hotel_name = localStorage.getItem('selected_hotel_name');
-      const hotel_latitude = localStorage.getItem('selected_hotel_latitude');
-      const hotel_longitude = localStorage.getItem('selected_hotel_longitude');
+      // const hotel_name = localStorage.getItem('selected_hotel_name');
+      // const hotel_latitude = localStorage.getItem('selected_hotel_latitude');
+      // const hotel_longitude = localStorage.getItem('selected_hotel_longitude');
+      const hotel_name = "Royalton New York";
+      const hotel_latitude = "40.755596";
+      const hotel_longitude = "-73.98231";
+      // console.log("larry, hotel_name", hotel_name);
+      // console.log("larry, hotel_latitude", hotel_latitude);
+      // console.log("larry, hotel_longitude", hotel_longitude);
       this.setState({
         hotel: [hotel_name, hotel_latitude, hotel_longitude]
       })
       this.setState({
           directions:[]
       })
-      const attraction_list = JSON.parse(localStorage.getItem('coordinates_list'));
-      console.log("attraction_list: ", attraction_list);
+      // const attraction_list = JSON.parse(localStorage.getItem('coordinates_list'));
+      const attraction_list = [{lat: 40.7484, lng: -73.9857}, {lat: 40.75889, lng: -73.98512}];
+      // console.log("larry, attraction_list: ", attraction_list);
       // console.log("route info: ", localStorage.getItem('routeInfo'));
       // origin = visitSeq[0];
       // destination = visitSeq[visitSeq.length - 1];
